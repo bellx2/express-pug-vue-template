@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  #app
+    include _menu.pug
+    h1= title
+    p Welcome to #{title}
+    el-card
+      h1 {{ message }}
+      el-input(v-model="message" type="textarea" placeholder="Please Input")
+      h2 メニュー:{{ activeIndex }}
+      p
+      el-button(size="mini",type="success",@click="dialogVisible=true") Save
+      el-dialog(:visible.sync="dialogVisible")
+        span {{ message }}
+        p
+          el-button(size="mini",@click="dialogVisible=false") Close
+    script.
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue World!!',
+          activeIndex: '1',
+          dialogVisible: false,
+        },
+        methods: {
+          handleSelect(key, keyPath) {
+            console.log(key, keyPath);
+            this.activeIndex = key;
+          }
+        }
+      })
