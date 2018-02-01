@@ -5,6 +5,7 @@ This is starter template using express, vue, element
 1. Clone this repo.
 1. Execute `npm install`.
 1. Execute `npm start`.
+1. Execute `npm run sync` to use browser-sync
 1. Enjoy.
 
 # Libraries

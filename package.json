@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node-dev ./bin/www"
+    "start": "node-dev ./bin/www;",
+    "sync": "browser-sync start --proxy localhost:3000 --files *"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
+    "browser-sync": "^2.23.6",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
