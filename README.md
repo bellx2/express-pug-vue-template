@@ -10,6 +10,6 @@ This is starter template using express, vue, element
 
 # Libraries
 
-http://expressjs.com/
-https://vuejs.org/
-http://element.eleme.io/#/en-US
+- http://expressjs.com/
+- https://vuejs.org/
+- http://element.eleme.io/#/en-US
