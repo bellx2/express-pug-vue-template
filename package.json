@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node-dev ./bin/www;",
-    "sync": "browser-sync start --proxy localhost:3000 --files *"
+    "start": "node ./bin/www;",
+    "sync": "browser-sync start --proxy localhost:3000 --files *",
+    "develpment": "node-dev ./bin/www;"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
