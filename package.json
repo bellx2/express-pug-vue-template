@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.10",
     "cookie-parser": "^1.4.5",
     "debug": "~2.6.9",
     "express": "^4.16.4",
